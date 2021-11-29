@@ -5,6 +5,7 @@ import { ConfigModule } from './config/config.module';
 import { DomainsController } from './modules/domains/domains.controller';
 import { DomainsModule } from './modules/domains/domains.module';
 import { OrdersModule } from './modules/orders/orders.module';
+import {OrdersGatewayModule} from './modules/ordersGateway/orders.gateway.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigService } from './config/config.service';
 
@@ -18,6 +19,7 @@ import { ConfigService } from './config/config.service';
     }),
     DomainsModule,
     OrdersModule,
+    OrdersGatewayModule
   ],
   controllers: [AppController, DomainsController],
   providers: [AppService],
